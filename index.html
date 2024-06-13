@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <link href ="style.css"rel="stylesheet"type="text/css">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Operadores</title>
+       
+    </head>
+
+    <body>
+        <p>Esta página muestra operadores</p>
+      <script type="text/javascript">
+        var valores = [true, 5, false, "hola", "adios", 2];
+        var resultado = valores[3] > valores[4];
+        document.write("resultado 1:" + resultado +"<br/>");
+      
+        // Combinar valores booleanos
+        var valor1 = valores[0];
+        var valor2 = valores[2];
+        document.write("resultado 2:" + resultado +"<br/>");
+        
+        // Obtener un resultado TRUE
+        var resultado = valor1 || valor2;
+        document.write("resultado 3:" + resultado +"<br/>"); 
+
+        // Obtener un resultado FALSE
+        resultado = valor1 && valor2;
+        document.write("resultado 4:" + resultado +"<br/>");
+
+        // Operaciones matemáticas
+        var num1 = valores[1];
+        var num2 = valores[5];
+
+        var suma = num1 + num2;
+        document.write("suma:" + num1 + num2 + "<br/>");
+
+        //var resta = num1 - num2;
+        document.write("resta:" + num1 - num2 + "<br/>");
+
+        // var multiplicacion = num1 * num2;
+        document.write("multiplicacion:" + num1 * num2 + "<br/>");
+
+        // var division = num1 / num2;
+        document.write("division:" + num1 / num2 + "<br/>");
+
+        // var modulo = num1 % num2;
+        document.write("modulo:" + num1 % num2 + "<br/>");
+
+      </script>
+    </body>
+</html>
